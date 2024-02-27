@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --background-color-dark: 23, 18, 51;
+}
+
+@font-face {
+  font-family: "Josefine";
+  src: url("/fonts/JosefinSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "NewYork";
+  src: url("/fonts/NewYork\ PERSONAL\ USE.otf");
+}
+.NewYork {
+  font-family: 'New York', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #c6c8ee91;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
