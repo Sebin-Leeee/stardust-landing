@@ -11,12 +11,16 @@ export default function Home() {
     <main
       className={`grain-overlay flex min-h-screen flex-col items-center justify-between p-2 bg-gradient-to-b from-darkPurple to-pastelPurple`}
     >
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
       <Main />
       <Cards />
-      <Price/>
+      <Price />
       <Newsletter />
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </main>
   );
 }
